@@ -22,6 +22,7 @@ namespace Face {
 	};
 
 	double calculSimilar(std::vector<float>& v1, std::vector<float>& v2);
+	double calculSimilarEuler(std::vector<float>& v1, std::vector<float>& v2);
 }
 
 #endif // !RECOGNIZE_H_

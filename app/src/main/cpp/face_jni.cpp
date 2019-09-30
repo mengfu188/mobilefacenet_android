@@ -180,6 +180,7 @@ Java_com_example_l_mobilefacenet_Face_FaceRecognize(JNIEnv *env, jobject instanc
 
     env->ReleaseByteArrayElements(faceDate1_, faceDate1, 0);
     env->ReleaseByteArrayElements(faceDate2_, faceDate2, 0);
-    similar=calculSimilar(feature1, feature2);
+//    similar=calculSimilar(feature1, feature2);
+    similar=calculSimilarEuler(feature1, feature2);
     return similar;
 }

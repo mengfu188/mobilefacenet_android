@@ -3,6 +3,7 @@ created by L. 2018.05.16
 */
 
 #include "recognize.h"
+#include <math.h>
 
 namespace Face {
 
@@ -53,4 +54,17 @@ namespace Face {
 		}
 		return ret / sqrt(mod1) / sqrt(mod2) ;
 	}
+
+	double calculSimilarEuler(std::vector<float>& v1, std::vector<float>& v2)
+	{
+		if(v1.size() != v2.size() || !v1.size())
+			return 0;
+		double ret = 0.0;
+		for (std::vector<double>::size_type i = 0; i != v1.size(); ++i)
+		{
+			ret += pow(v1[i] - v2[i], 2);
+		}
+		return ret / v1.size();
+	}
+
 }
