@@ -4,7 +4,7 @@
 #include <string>
 #include "net.h"
 #include <algorithm>
-
+#include <math.h>
 
 namespace Face {
 	class Recognize {

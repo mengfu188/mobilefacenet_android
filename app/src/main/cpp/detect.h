@@ -4,6 +4,7 @@
 #include <string>
 #include <iostream>
 #include "net.h"
+#include <math.h>
 
 namespace Face {
 
